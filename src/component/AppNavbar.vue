@@ -13,9 +13,9 @@ const toggleMenu = () => {
       <div class="flex items-center justify-between h-16">
         <!-- Logo -->
         <div class="flex items-center">
-          <a href="/" class="flex items-center space-x-2">
+          <router-link :to="{ name: 'home' }" class="flex items-center space-x-2">
             <span class="text-xl font-bold text-cyan-600">Ticket Management</span>
-          </a>
+          </router-link>
         </div>
 
         <!-- Desktop Navigation -->

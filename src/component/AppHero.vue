@@ -17,16 +17,22 @@ onMounted(() => {
     class="hero min-h-[85vh] bg-linear-to-b from-cyan-50 to-cyan-100 relative overflow-hidden"
   >
     <div class="container mx-auto px-4 h-full">
-      <div class="flex items-center h-full py-12">
-        <div class="hero-content flex-1 space-y-8 basis-[50%] animate-fade-in opacity-0">
-          <h1 class="text-5xl md:text-6xl font-bold text-gray-800 leading-tight">
+      <div class="flex flex-col lg:flex-row items-center h-full py-12">
+        <div
+          class="hero-content flex-1 space-y-6 lg:space-y-8 text-center lg:text-left basis-full lg:basis-[50%] animate-fade-in opacity-0"
+        >
+          <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-800 leading-tight">
             Manage Tickets <span class="text-cyan-600">Easily</span>
           </h1>
-          <p class="text-xl text-gray-600 max-w-lg animate-fade-in opacity-0">
+          <p
+            class="text-lg sm:text-xl text-gray-600 max-w-lg mx-auto lg:mx-0 animate-fade-in opacity-0"
+          >
             Track, organize, and resolve tickets with ease — built for speed and simplicity. Your
             one-stop solution for efficient ticket management.
           </p>
-          <div class="hero-buttons flex gap-4 pt-4 animate-fade-in opacity-0">
+          <div
+            class="hero-buttons flex flex-col sm:flex-row justify-center lg:justify-start gap-4 pt-4 animate-fade-in opacity-0"
+          >
             <router-link
               :to="{ name: 'signup' }"
               class="inline-block px-8 py-3 bg-cyan-600 text-white rounded-lg font-semibold transform transition-all duration-300 hover:scale-105 hover:bg-cyan-700 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-opacity-50"
@@ -41,12 +47,12 @@ onMounted(() => {
             </router-link>
           </div>
         </div>
-        <figure class="basis-[50%] relative animate-fade-in opacity-0">
+        <figure class="basis-full lg:basis-1/2 relative animate-fade-in opacity-0 mt-8 lg:mt-0">
           <div
-            class="absolute -top-4 -left-4 w-72 h-72 bg-cyan-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"
+            class="hidden sm:block absolute -top-4 -left-4 w-72 h-72 bg-cyan-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"
           ></div>
           <div
-            class="absolute -bottom-8 -right-4 w-72 h-72 bg-cyan-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"
+            class="hidden sm:block absolute -bottom-8 -right-4 w-72 h-72 bg-cyan-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"
           ></div>
           <img
             src="/images/hero.png"
